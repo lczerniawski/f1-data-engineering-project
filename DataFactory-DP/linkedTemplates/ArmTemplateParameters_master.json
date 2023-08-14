@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "DataFactory-DP"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricks_accessToken": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://formula1datalake1565.dfs.core.windows.net/"
+		},
+		"AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"value": "0814-084242-g8kbktie"
+		},
+		"F1 Circuts_properties_typeProperties_url": {
+			"value": "http://ergast.com/api/f1/circuits.json?limit=1000"
+		},
+		"F1 Constructors_properties_typeProperties_url": {
+			"value": "https://ergast.com/api/f1/constructors.json?limit=1000"
+		},
+		"F1 Drivers_properties_typeProperties_url": {
+			"value": "http://ergast.com/api/f1/drivers.json?limit=1000"
+		},
+		"F1 Races_properties_typeProperties_url": {
+			"value": "https://ergast.com/api/f1/races.json?offset=300&limit=1000"
+		},
+		"F1 Results_properties_typeProperties_url": {
+			"value": "https://ergast.com/api/f1/results.json?limit=1000&offset=25000"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
