@@ -1,0 +1,14 @@
+{
+	"name": "F1 Drivers",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "F1 API",
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "http://ergast.com/api/f1/drivers.json?limit=1000",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
