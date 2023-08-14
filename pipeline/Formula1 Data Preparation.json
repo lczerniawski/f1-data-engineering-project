@@ -70,7 +70,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"notebookPath": "/Users/lukasz.czerniawski@axadirect-solutions.pl/Formula1 Project/Circuits Ingestion"
+								"notebookPath": "/Repos/lukasz.czerniawski@axadirect-solutions.pl/f1-data-engineering-project/notebooks/Circuits Ingestion"
 							},
 							"linkedServiceName": {
 								"referenceName": "AzureDatabricks",
@@ -90,7 +90,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"notebookPath": "/Users/lukasz.czerniawski@axadirect-solutions.pl/Formula1 Project/Results Ingestion"
+								"notebookPath": "/Repos/lukasz.czerniawski@axadirect-solutions.pl/f1-data-engineering-project/notebooks/Results Ingestion"
 							},
 							"linkedServiceName": {
 								"referenceName": "AzureDatabricks",
@@ -110,7 +110,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"notebookPath": "/Users/lukasz.czerniawski@axadirect-solutions.pl/Formula1 Project/Constructors Ingestion"
+								"notebookPath": "/Repos/lukasz.czerniawski@axadirect-solutions.pl/f1-data-engineering-project/notebooks/Constructors Ingestion"
 							},
 							"linkedServiceName": {
 								"referenceName": "AzureDatabricks",
@@ -130,7 +130,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"notebookPath": "/Users/lukasz.czerniawski@axadirect-solutions.pl/Formula1 Project/Drivers Ingestion"
+								"notebookPath": "/Repos/lukasz.czerniawski@axadirect-solutions.pl/f1-data-engineering-project/notebooks/Drivers Ingestion"
 							},
 							"linkedServiceName": {
 								"referenceName": "AzureDatabricks",
@@ -150,7 +150,7 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"notebookPath": "/Users/lukasz.czerniawski@axadirect-solutions.pl/Formula1 Project/Races Ingestion"
+								"notebookPath": "/Repos/lukasz.czerniawski@axadirect-solutions.pl/f1-data-engineering-project/notebooks/Races Ingestion"
 							},
 							"linkedServiceName": {
 								"referenceName": "AzureDatabricks",

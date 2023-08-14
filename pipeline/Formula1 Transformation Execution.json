@@ -35,7 +35,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/lukasz.czerniawski@axadirect-solutions.pl/Formula1 Project/Transformation Race Results"
+					"notebookPath": "/Repos/lukasz.czerniawski@axadirect-solutions.pl/f1-data-engineering-project/notebooks/Transformation Race Results"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks",
@@ -62,7 +62,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/lukasz.czerniawski@axadirect-solutions.pl/Formula1 Project/Transformation Drivers Standings"
+					"notebookPath": "/Repos/lukasz.czerniawski@axadirect-solutions.pl/f1-data-engineering-project/notebooks/Transformation Drivers Standings"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks",
@@ -89,7 +89,40 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/lukasz.czerniawski@axadirect-solutions.pl/Formula1 Project/Transformation Constructors Standings"
+					"notebookPath": "/Repos/lukasz.czerniawski@axadirect-solutions.pl/f1-data-engineering-project/notebooks/Transformation Constructors Standings"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "Save to Hive Meta Store",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "Transformation driver standings",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					},
+					{
+						"activity": "Transformation constructors standings",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Repos/lukasz.czerniawski@axadirect-solutions.pl/f1-data-engineering-project/notebooks/Save to Hive Meta Store"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks",
