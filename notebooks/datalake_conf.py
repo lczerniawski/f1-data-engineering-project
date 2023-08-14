@@ -1,6 +1,6 @@
 # Databricks notebook source
 #Create variable with Access Key to DataLake
-storageAccountAccessKey = "tREt0f582N+3ZLKXCxVYMFddGREuTIaSazuwagozrZyPsejlzksnHxV2wQNdqu/Q9+XGS8Yx2VQ9+AStVRPWdA=="
+storageAccountAccessKey = ""
 
 # COMMAND ----------
 
