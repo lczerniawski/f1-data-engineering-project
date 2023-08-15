@@ -47,6 +47,12 @@ The chosen stack is based on Microsoft recommendations for Azure Databricks Mode
 More on that [here](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/media/azure-databricks-modern-analytics-architecture.svg#lightbox) 
 As my main goal was to learn Azure Data Factory and Azure Databricks I decided to use this stack.
 
+### What can the data be used for?
+The data can be used to create various reports and analysis. For example:
+- Who is the most successful driver in the history of Formula 1?
+- Who is the most successful constructor in the history of Formula 1?
+- What is the most successful country in the history of Formula 1?
+
 ## Lessons Learned
 
 I learned a lot about Azure Data Factory and Azure Databricks. I also learned how to use Azure Data Factory to orchestrate data pipeline.
