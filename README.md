@@ -10,27 +10,27 @@ Ergast provides few collection that can be used to gather data. For this project
 
 ### Data Pipeline
 Data pipeline was created using Azure Data Factory. It consists of 3 main steps:
-- [Data gather](pipeline/Formula1 Data Copy.json) - data is gathered from the API and stored in Azure Data Lake Storage Gen2 in raw layer
+- [Data gather](pipeline/Formula1%20Data%20Copy.json) - data is gathered from the API and stored in Azure Data Lake Storage Gen2 in raw layer
   - Pipeline consist of five 'Copy data' blocks that each gather data from one of the Ergast API collections and saves it 
   - [Pipeline Screenshot](images/data_gather.png)
 
 
-- [Data ingestion](pipeline/Formula1 Data Preparation.json) - data is prepared for transformation and stored in Azure Data Lake Storage Gen2 in processed layer
+- [Data ingestion](pipeline/Formula1%20Data%20Preparation.json) - data is prepared for transformation and stored in Azure Data Lake Storage Gen2 in processed layer
   - Pipeline first call 'Data Copy' pipeline
   - Then 'Get Metadata' block is run to gather info about 'Raw Layer' files
   - Metadata is then passed to 'If condition' that checks if there are any files in 'Raw Layer'. 
   - If there are any files, then we execute 5 activities that each of is Databricks notebook, that contains logic for data preparation
   - Notebooks are:
-    - [Circuits Ingestion](notebooks/Circuits Ingestion.py) 
-    - [Constructors Ingestion](notebooks/Constructors Ingestion.py)
-    - [Drivers Ingestion](notebooks/Drivers Ingestion.py)
-    - [Results Ingestion](notebooks/Results Ingestion.py)
-    - [Races Ingestion](notebooks/Races Ingestion.py)
+    - [Circuits Ingestion](notebooks/Circuits%20Ingestion.py) 
+    - [Constructors Ingestion](notebooks/Constructors%20Ingestion.py)
+    - [Drivers Ingestion](notebooks/Drivers%20Ingestion.py)
+    - [Results Ingestion](notebooks/Results%20Ingestion.py)
+    - [Races Ingestion](notebooks/Races%20Ingestion.py)
   - After data is process it is put into 'Processed Layer'
   - [Pipeline Screenshot](images/data_prep.png)
   
 
-- [Data transformation](pipeline/Formula1 Transformation Execution.json) - data is transformed and stored first in Azure Data Lake Storage Gen2 in presentation layer and then in Hive Meta Store
+- [Data transformation](pipeline/Formula1%20Transformation%20Execution.json) - data is transformed and stored first in Azure Data Lake Storage Gen2 in presentation layer and then in Hive Meta Store
   - This is the actual pipeline that contains trigger that execute whole process
   - Trigger is set to run every Monday so right after when new data is available
   - Pipeline first call 'Data Ingestion' pipeline
