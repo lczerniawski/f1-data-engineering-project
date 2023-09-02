@@ -1,6 +1,6 @@
 # Formula1 Data Engineering Project
 
->Main goal of this project was to create a data pipeline that would allow to collect Formula1 data from the API, store it in a database and then be able to use it to various analysis.
+Main goal of this project was to create a data pipeline that would allow to collect Formula1 data from the API, store it in a database and then be able to use it to various analysis.
 
 ## Overview
 
